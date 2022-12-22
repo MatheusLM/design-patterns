@@ -11,20 +11,20 @@ export default class Singleton {
 }
 
 export class Database {
-	private static _dbObject: Database;
+	private static instance: Database;
 	private data: any = {};
-	private _name: string;
+	private name: string;
 	private constructor(name: string) {
-		this._name = name;
+		this.name = name;
 	}
 
 	public static getInstace() {
-		if (!this._dbObject) this._dbObject = new Database(String(Math.random()));
-		return this._dbObject;
+		if (!this.instance) this.instance = new Database(String(Math.random()));
+		return this.instance;
 	}
 
 	public getConnection() {
-		console.log("You're connected to the database:", this._name);
+		console.log("You're connected to the database:", this.name);
 	}
 
 	public addData(name: string, value: any) {
