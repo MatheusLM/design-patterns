@@ -14,7 +14,7 @@ export class Database {
 	private static _dbObject: Database;
 	private data: any = {};
 	private _name: string;
-	constructor(name: string) {
+	private constructor(name: string) {
 		this._name = name;
 	}
 
