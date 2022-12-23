@@ -9,3 +9,6 @@ patterns.prototype();
 
 // Factory
 patterns.factory();
+
+// Builder
+patterns.builder();
