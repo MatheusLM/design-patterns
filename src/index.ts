@@ -12,3 +12,6 @@ patterns.factory();
 
 // Builder
 patterns.builder();
+
+// AbstractFactory
+patterns.abstractFactory();

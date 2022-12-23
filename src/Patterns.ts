@@ -1,3 +1,7 @@
+import {
+	AbstractFactoryDocuments,
+	AbstractFactoryForms,
+} from "./patterns/AbstractFactory";
 import Builder from "./patterns/Builder";
 import Factory from "./patterns/Factory";
 import Prototype from "./patterns/Prototype";
@@ -31,5 +35,15 @@ export default class Patterns {
 	public builder() {
 		const builder = new Builder();
 		builder.show().addFloor().addWalls().addRoof().show();
+	}
+
+	public abstractFactory() {
+		const abstractFactoryForms = new AbstractFactoryForms();
+		const abstractForm1 = abstractFactoryForms.createProductA();
+		abstractForm1.showInfos();
+
+		const abstractFactoryDocuments = new AbstractFactoryDocuments();
+		const abstractDocument1 = abstractFactoryDocuments.createProductA();
+		abstractDocument1.showInfos();
 	}
 }
