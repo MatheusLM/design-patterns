@@ -8,7 +8,9 @@ export default class Prototype {
 	private person: any = {};
 	private babyPerson: any = {};
 
-	constructor() {}
+	constructor() {
+		console.log("\r\n>> Prototype pattern");
+	}
 
 	public createPerson() {
 		this.person = Object.create(this.personDefault, {

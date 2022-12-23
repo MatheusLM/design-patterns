@@ -2,6 +2,7 @@ export default class Factory {
 	private os: string;
 	private items: any[] = [];
 	constructor(os: string) {
+		console.log("\r\n>> Factory pattern");
 		this.os = os;
 	}
 

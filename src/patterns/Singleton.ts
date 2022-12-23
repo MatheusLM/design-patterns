@@ -15,6 +15,7 @@ export class Database {
 	private data: any = {};
 	private name: string;
 	private constructor(name: string) {
+		console.log("\r\n>> Singleton pattern");
 		this.name = name;
 	}
 
