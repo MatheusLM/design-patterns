@@ -6,3 +6,6 @@ patterns.singleton();
 
 // Prototype
 patterns.prototype();
+
+// Factory
+patterns.factory();
