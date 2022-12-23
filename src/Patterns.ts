@@ -1,3 +1,4 @@
+import Prototype from "./patterns/Prototype";
 import Singleton from "./patterns/Singleton";
 
 export default class Patterns {
@@ -10,5 +11,12 @@ export default class Patterns {
 
 		const secondSingleton = new Singleton();
 		secondSingleton.showData();
+	}
+
+	public prototype() {
+		console.log(">> Prototype pattern");
+		const prototype = new Prototype();
+		prototype.createPerson();
+		prototype.createBabyPerson();
 	}
 }

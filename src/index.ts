@@ -1,5 +1,8 @@
 import Patterns from "./Patterns";
 
-// Singleton
 const patterns = new Patterns();
+// Singleton
 patterns.singleton();
+
+// Prototype
+patterns.prototype();
