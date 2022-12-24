@@ -1,6 +1,6 @@
 import {
 	AbstractFactoryDocuments,
-	AbstractFactoryForms,
+	AbstractFactoryShapes,
 } from "./patterns/AbstractFactory";
 import Builder from "./patterns/Builder";
 import Factory from "./patterns/Factory";
@@ -38,12 +38,12 @@ export default class Patterns {
 	}
 
 	public abstractFactory() {
-		const abstractFactoryForms = new AbstractFactoryForms();
-		const abstractForm1 = abstractFactoryForms.createProductA();
-		abstractForm1.showInfos();
+		const abstractFactoryShapes = new AbstractFactoryShapes();
+		const abstractShape = abstractFactoryShapes.createProductA();
+		abstractShape.showInfos();
 
 		const abstractFactoryDocuments = new AbstractFactoryDocuments();
-		const abstractDocument1 = abstractFactoryDocuments.createProductA();
-		abstractDocument1.showInfos();
+		const abstractDocument = abstractFactoryDocuments.createProductA();
+		abstractDocument.showInfos();
 	}
 }

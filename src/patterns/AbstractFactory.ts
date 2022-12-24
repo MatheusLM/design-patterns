@@ -1,7 +1,7 @@
 // AbstractFactory 1
-export class AbstractFactoryForms implements IAbstractFactory {
+export class AbstractFactoryShapes implements IAbstractFactory {
 	constructor() {
-		console.log("\r\n>> AbstractFactory pattern Forms");
+		console.log("\r\n>> AbstractFactory pattern Shapes");
 	}
 
 	public createProductA(): AbstractProductA1 {
